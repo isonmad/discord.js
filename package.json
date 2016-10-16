@@ -4,7 +4,7 @@
   "description": "A way to interface with the Discord API",
   "main": "./entrypoint.js",
   "scripts": {
-    "postinstall": "node postinstall.js"
+    "postinstall": "node entrypoint.js"
   },
   "repository": {
     "type": "git",
