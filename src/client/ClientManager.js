@@ -61,6 +61,7 @@ class ClientManager {
     return new Promise((resolve) => {
       if (!this.client.user.bot) {
         this.client.rest.methods.logout().then(resolve, reject);
+        this.client.ws.destroy();
       } else {
         this.client.ws.destroy();
         resolve();
